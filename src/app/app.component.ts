@@ -12,18 +12,28 @@ export class AppComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) {
     this.form = this.formBuilder.group({
       birthDate: [null],
+      frase: [null],
     });
   }
 
   ngOnInit(): void {}
 
-  birthDataValue() {
-    console.log(this.form.value.birthDate);
+  validateInput() {
+    if (!this.form.value.birthDate) {
+      return;
+    }
+    this.calculateDate();
   }
 
   calculateDate() {
     let birthDate = this.form.value.birthDate.split('-');
-    return this.valueReducer(birthDate[2] + birthDate[1] + birthDate[0]);
+    let reducedDate = this.valueReducer(
+      birthDate[2] + birthDate[1] + birthDate[0]
+    );
+    let frasePicker = this.frasePicker(reducedDate);
+    console.log(frasePicker);
+    this.form.value.frase = frasePicker;
+    console.log('this.form.value.frase = ' + this.form.value.frase);
   }
 
   valueReducer(value: number) {
@@ -37,7 +47,22 @@ export class AppComponent implements OnInit {
       }
       return acc;
     });
-    console.log(reducedValue);
     return reducedValue;
+  }
+
+  frasePicker(value: number) {
+    return {
+      1: 'energia numero 1',
+      2: 'energia numero 2',
+      3: 'energia numero 3',
+      4: 'energia numero 4',
+      5: 'energia numero 5',
+      6: 'energia numero 6',
+      7: 'energia numero 7',
+      8: 'energia numero 8',
+      9: 'energia numero 9',
+      11: 'energia numero 11',
+      22: 'energia numero 22',
+    }[value];
   }
 }

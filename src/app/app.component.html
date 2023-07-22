@@ -1,9 +1,20 @@
 <div class="content" role="main">
-  <div style="display: flex; flex-direction: column; width: 30%">
+  <div
+    style="
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    "
+  >
     <form [formGroup]="form">
-      <label>Selecione sua data de nascimento:</label>
-      <input type="date" id="dataNiver" formControlName="birthDate" />
-      <button (click)="calculateDate()">Executar</button>
+      <div style="display: flex; flex-direction: column">
+        <label>Selecione sua data de nascimento:</label>
+        <input type="date" id="datePicker" formControlName="birthDate" />
+        <button (click)="validateInput()">Executar</button>
+        <input type="text" value="{{ this.form.value.frase }}" disabled />
+      </div>
     </form>
   </div>
 </div>
