@@ -1,3 +1,10 @@
+.content {
+  color: white !important;
+}
+.icon {
+  width: 190px;
+  height: 170px;
+}
 .centered-text {
   text-align: center;
 }
@@ -48,6 +55,6 @@ h4 {
 a {
   font-family: Charmonman;
   text-decoration: none;
-  color: black;
+  color: white !important;
   font-weight: bold;
 }

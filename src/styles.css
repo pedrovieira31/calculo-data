@@ -4,3 +4,8 @@
   font-family: "Charmonman";
   src: url("assets/Charmonman-Regular.ttf");
 }
+body {
+  background-image: url("/assets/images/background-image.jpeg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
