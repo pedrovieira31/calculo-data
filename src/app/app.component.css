@@ -24,6 +24,20 @@
   -ms-transform: translateY(-50%) translateX(50%);
   transform: translateY(-50%) translateX(50%);
 }
+@media screen and (max-width: 600px) {
+  .vertical-center {
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  h5 {
+    font-size: xx-large !important;
+    font-family: Charmonman;
+  }
+}
 h5 {
   font-size: -webkit-xxx-large;
   font-family: Charmonman;
