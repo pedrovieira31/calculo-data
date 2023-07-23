@@ -17,6 +17,7 @@
 .form-fields {
   border: none;
   align-self: center;
+  width: auto;
 }
 .allign-form {
   display: flex;

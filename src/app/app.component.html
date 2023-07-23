@@ -14,16 +14,17 @@
       <form [formGroup]="form">
         <div class="allign-form">
           <label>Coloque aqui sua DATA DE NASCIMENTO:</label>
+          <p></p>
           <input
             type="date"
             id="datePicker"
-            class="centered-text form-fields"
+            class="centered-text form-fields form-control"
             formControlName="birthDate"
             (change)="calculateDate()"
           />
           <p></p>
           <div *ngIf="this.form.value.frase">
-            <label type="text" class="centered-text form-fields" disabled
+            <label type="text" class="centered-text" disabled
               >{{ this.form.value.frase }}
             </label>
             <p></p>
