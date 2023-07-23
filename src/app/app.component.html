@@ -19,7 +19,7 @@
             id="datePicker"
             class="centered-text form-fields"
             formControlName="birthDate"
-            (change)="validateInput()"
+            (change)="calculateDate()"
           />
           <p></p>
           <div *ngIf="this.form.value.frase">
@@ -32,7 +32,9 @@
               complementam seu propósito e trazem maior leveza para sua vida,
               clique no link abaixo:
             </label>
-            <a href="{{ this.form.value.link }}"> CONHEÇA SUA LUZ </a>
+            <a href="{{ this.form.value.link }}" (click)="clearForm()">
+              CONHEÇA SUA LUZ
+            </a>
           </div>
         </div>
       </form>

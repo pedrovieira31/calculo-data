@@ -31,7 +31,7 @@
   -ms-transform: translateY(-50%) translateX(50%);
   transform: translateY(-50%) translateX(50%);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1050px) {
   .vertical-center {
     margin: auto;
     padding: 10px;
@@ -39,6 +39,10 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+  .icon {
+    width: 120px;
+    height: 100px;
   }
   h5 {
     font-size: xx-large !important;
@@ -57,4 +61,5 @@ a {
   text-decoration: none;
   color: white !important;
   font-weight: bold;
+  font-size: 1.6em;
 }

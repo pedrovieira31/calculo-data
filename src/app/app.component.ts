@@ -20,11 +20,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  validateInput() {
-    if (!this.form.value.birthDate) {
-      return;
-    }
-    this.calculateDate();
+  clearForm() {
+    this.form.reset();
   }
 
   calculateDate() {
