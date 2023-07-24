@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
       8: 'Você veio trazer verdade através da conexão entre o espiritual e o material. Haja sempre com honestidade e o sucesso material será garantido. Todas as suas conquistas materiais são um reflexo do seu estado Espiritual, quanto mais alinhado com sua verdade é valores você estiver, mais você prosperará no material.',
       9: 'Você veio ajudar almas a se curarem através da fala. Você viverá várias experiências para que essas se tornem fonte de ajuda e inspiração para os outros. Quanto maior a sua conexão com a Espiritualidade mais você conseguirá ajudar e mais sucesso terá. Ajude sem esperar o retorno e o retorno virá.',
       11: 'Você veio curar pessoas através da reciclagem de energias e da espiritualidade. Busque se fortalecer Espiritualmente para conseguir ouvir sua intuição, tenha paciência e flexibilidade com você e com os outros. Você será fonte de inspiração quando estiver totalmente conectado com sua Espiritualidade e seu propósito de cura.',
-      22: 'Você veio compartilhar conhecimentos antigos e construir grandes coisas através da maestria e da espiritualidade. Haja sempre de forma justa e honesta para sempre prosperar e lembre-se com grandes poderes vem grandes responsabilidades. Saiba usar seus dons para ajudar quem precisa e seu sucesso será garantido.',
+      22: 'Você veio compartilhar conhecimentos antigos e construir grandes coisas através da maestria e da espiritualidade. Haja sempre de forma justa e honesta para sempre prosperar e lembre-se com grandes poderes vem grandes responsabilidades. Saiba usar seus dons para ajudar quem precisa e seu sucesso será garantido.',
     }[value];
   }
 }
