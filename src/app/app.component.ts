@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
       birthDate[2] + birthDate[1] + birthDate[0]
     );
     this.form.value.frase = this.frasePicker(reducedDate);
+    window.open(this.form.value.link);
   }
 
   valueReducer(value: number) {
